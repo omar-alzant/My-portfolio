@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Sansita+Swashed:wght@300&display=swap');
+
+:root{
+    --bck: rgb(214, 235, 228);
+    --gridwidth:    20vw ;
+}
+
+
+body{
+    background-color: var(--bck) ;
+    display: grid;
+}
+
+.title{
+    margin: 3vw;
+    padding: 1.5vw;
+    display: flexbox;
+    justify-self: center;
+    font-family: 'Sansita Swashed', cursive;
+    margin-bottom:0 ;
+}
+h2{
+    font-size: 2vw;
+    margin-top: 2vw;
+}
+
+.line{
+    border: 2px solid silver;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 0;
+}
+header{
+    display: grid;
+    gap: 5vw;
+    grid-template-columns: auto 45% auto;
+    margin-top: 3vw;
+    border:   2px solid silver;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+img[alt*='logo']{
+    position: relative;
+    margin-bottom: -7vw;
+    margin-top:  1vw ;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 15%;
+    float: left;
+    margin-left: 5vw;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    max-height: 13vh;
+}
+
+button{
+    padding: 1vw;   
+    cursor: pointer;
+    margin: 2px;
+    border: none; 
+    background-color: transparent;
+    font-family: 'Roboto Mono', monospace;
+    margin-right: 2vw ;
+    font-size: 1vw;
+}
+
+button:hover{
+    border-bottom: 2px solid lightcoral;
+}
+
+.grid-cont{
+    display: grid;
+    grid-template-columns: repeat(3,25vw);
+    grid-template-rows: repeat(3,25vw);
+    gap: 1vw;  
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 1vw;
+    justify-content: center;
+}
+
+.grid-item{
+    /* border: 2px solid orange; */
+    margin: 2vw;
+}
+
+.back{
+    background-color: rgb(151, 234, 237);
+    width: var(--gridwidth);
+    height: var(--gridwidth);
+    border-radius: 15%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: opacity 0.7s ease;
+}
+
+.back p{
+    font-size: 1.5vw;
+}
+
+.back:hover{
+    opacity: 0.9;
+}
+
+img{
+    width: var(--gridwidth);
+    height: var(--gridwidth);
+    border-radius: 15%;
+    cursor: pointer;
+    position: absolute;
+}
+
+img:hover{
+    animation-duration: 1s;
+}
+
+
+
+
+/* img::before{
+    content: " ";
+    border: 3px solid orange;
+} */
