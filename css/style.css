@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Sansita+Swashed:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Sansita+Swashed:wght@300&display=swap'); */
 
 :root{
     --bck: rgb(214, 235, 228);
